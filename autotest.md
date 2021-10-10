@@ -5,7 +5,7 @@ netstat -anp | grep 8080 | grep LISTEN
 2. 如何检测远程服务是否启动  
 telnet 1.2.3.4 8080
 3. 如何查询磁盘使用情况  
-dh -f
+df -h 
 4. 如何查询进程cpu、内存使用情况  
 top
 5. 如何查询进程工作目录  
@@ -72,7 +72,7 @@ __del\_\_
 sys.argc, sys.argv  
    - import sys.argc导入sys中argc，使用如下所示：  
 sys.argc
-   - from sys imprt argc, argv导入sys中argc和argv，使用如下所
+   - from sys import argc, argv导入sys中argc和argv，使用如下所
 示：  
 argc, argv
 6. python如何注释
@@ -84,7 +84,7 @@ argc, argv
    - 脚本的第一行添加#! /usr/bin/env python，然后chmod +x 
 xxx.py，./xxx.py
 8. 如何查询python的所有保留字
-imprt keyword
+import keyword
 print(keyword.kwlist)
 9. print函数换行吗？如果不换行如何做？
    - print函数默认换行
@@ -173,7 +173,7 @@ innodb，myisam
 把A账户的钱转给B账户
 14. mysql主键索引和普通索引有什么区别  
 主键索引不能为空
-15. mysql底层数据结构是什么
+15. mysql底层数据结构是什么  
 b+树
 
 
